@@ -1,0 +1,7 @@
+Canonical share-ingest CSV (Shanghai + Shenzhen only).
+Success row requires: title, address>=3, start_time, end_time, city in {上海,深圳},
+cover_download_ok=true (local image >=4KB), source_url.
+cover_local_path is relative to share_ingest_delivery/.
+Collected at: 2026-09-27T09:54:03.418385+00:00
+Platforms: showstart, huodongxing, douban, allevents, eventbrite, xiaohongshu, douyin.
+xiaohongshu/douyin are best-effort public pages without login; gaps are real.

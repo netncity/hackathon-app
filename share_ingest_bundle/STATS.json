@@ -1,0 +1,49 @@
+{
+  "report": [
+    {
+      "platform": "showstart",
+      "success_count": 100,
+      "target": 100,
+      "gap": 0
+    },
+    {
+      "platform": "eventbrite",
+      "success_count": 100,
+      "target": 100,
+      "gap": 0
+    },
+    {
+      "platform": "allevents",
+      "success_count": 56,
+      "target": 100,
+      "gap": 44
+    },
+    {
+      "platform": "huodongxing",
+      "success_count": 100,
+      "target": 100,
+      "gap": 0
+    },
+    {
+      "platform": "douban",
+      "success_count": 100,
+      "target": 100,
+      "gap": 0
+    },
+    {
+      "platform": "xiaohongshu",
+      "success_count": 0,
+      "target": 100,
+      "gap": 100
+    },
+    {
+      "platform": "douyin",
+      "success_count": 0,
+      "target": 100,
+      "gap": 100
+    }
+  ],
+  "merged": 456,
+  "collected_at": "2026-09-27T10:15:22.310420+00:00",
+  "notes": "xiaohongshu/douyin best-effort public/no-login; gaps are real not padded"
+}

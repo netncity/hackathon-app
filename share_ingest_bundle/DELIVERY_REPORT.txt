@@ -1,0 +1,21 @@
+Share ingest delivery — Shanghai + Shenzhen — 7 platforms
+=========================================================
+Counting rule: success only when title + address>=3 + start/end + city∈{上海,深圳} + cover_download_ok=true (≥4KB on disk).
+
+Final (actual vs target 100):
+  showstart     100 / 100
+  eventbrite    100 / 100
+  huodongxing   100 / 100
+  douban        100 / 100
+  allevents      56 / 100   (public SH/SZ inventory exhausted; ~45–56 unique dated city-path events)
+  xiaohongshu     0 / 100   (no-login public HTML/search yields SPA shell; no dated notes+covers)
+  douyin          0 / 100   (same — login/anti-bot wall; gaps NOT padded with fake rows)
+
+Merged (source_url + fingerprint dedupe): 456 rows
+
+Zip locations (artifacts fuse Errno 5 on large write):
+  /tmp/netncity_share_7platforms_sh_sz.zip
+  /workspace/netncity_share_7platforms_sh_sz.zip
+  Contents: share_ingest_delivery/{per_platform/*.csv, merged_sh_sz.csv, images/{platform}/, COLUMN_GUIDE.txt, STATS.json, DELIVERY_REPORT.txt}
+
+No crawler scripts committed to NetNCity business repo (Scheme B /tmp-only).
