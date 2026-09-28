@@ -1,0 +1,12 @@
+Share ingest delivery v2 (multi-city, 6 platforms)
+collected_at: 2026-09-28T14:54:30.743466+00:00
+merged rows: 1824
+
+- allevents: 92 (story>=80=83) 上海24, 深圳15, 北京20, 广州14, 杭州6, 成都6, 南京2, 苏州3, 武汉2
+- douban: 868 (story>=80=84) 上海100, 深圳100, 北京100, 广州100, 杭州100, 成都100, 重庆100, 南京100, 苏州68
+- douyin: 131 (story>=80=119) 上海33, 深圳12, 北京16, 广州17, 杭州23, 成都18, 重庆1, 南京11
+- huodongxing: 376 (story>=80=0) 上海100, 深圳100, 北京100, 广州76
+- showstart: 300 (story>=80=95) 上海100, 深圳100, 北京100
+- xiaohongshu: 57 (story>=80=28) 上海24, 深圳5, 北京1, 广州6, 杭州15, 重庆1, 南京5
+
+No crawler code / cookies included.
