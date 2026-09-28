@@ -1,7 +1,8 @@
-Canonical share-ingest CSV (Shanghai + Shenzhen only).
-Success row requires: title, address>=3, start_time, end_time, city in {上海,深圳},
-cover_download_ok=true (local image >=4KB), source_url.
-cover_local_path is relative to share_ingest_delivery/.
-Collected at: 2026-09-27T09:54:03.418385+00:00
-Platforms: showstart, huodongxing, douban, allevents, eventbrite, xiaohongshu, douyin.
-xiaohongshu/douyin are best-effort public pages without login; gaps are real.
+contract_version=2026-09-28
+Required: platform,source_id,title,start_time,end_time,address,city,publish_tier,cover_download_ok,cover_local_path,source_url
+publish_tier: ticketed|community|media_roundup (never ready)
+No tags column. Times treated as UTC unless noted.
+Cities: 上海, 深圳, 北京, 广州, 杭州, 成都, 重庆, 南京, 苏州, 武汉, 西安, 长沙, 凯里, 喀什, 西宁
+Ended events excluded (end_time <= crawl time).
+Xiaohongshu/Douyin need login; gaps not padded.
+Time policy: prefer source HH:MM; if only a date is available, default start=10:00 end=18:00 and set notes time_defaulted=10:00/18:00.

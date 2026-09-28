@@ -1,21 +1,12 @@
-Share ingest delivery — Shanghai + Shenzhen — 7 platforms
-=========================================================
-Counting rule: success only when title + address>=3 + start/end + city∈{上海,深圳} + cover_download_ok=true (≥4KB on disk).
+Share ingest delivery v2 (multi-city, 6 platforms)
+collected_at: 2026-09-28T14:54:30.743466+00:00
+merged rows: 1824
 
-Final (actual vs target 100):
-  showstart     100 / 100
-  eventbrite    100 / 100
-  huodongxing   100 / 100
-  douban        100 / 100
-  allevents      56 / 100   (public SH/SZ inventory exhausted; ~45–56 unique dated city-path events)
-  xiaohongshu     0 / 100   (no-login public HTML/search yields SPA shell; no dated notes+covers)
-  douyin          0 / 100   (same — login/anti-bot wall; gaps NOT padded with fake rows)
+- allevents: 92 (story>=80=83) 上海24, 深圳15, 北京20, 广州14, 杭州6, 成都6, 南京2, 苏州3, 武汉2
+- douban: 868 (story>=80=84) 上海100, 深圳100, 北京100, 广州100, 杭州100, 成都100, 重庆100, 南京100, 苏州68
+- douyin: 131 (story>=80=119) 上海33, 深圳12, 北京16, 广州17, 杭州23, 成都18, 重庆1, 南京11
+- huodongxing: 376 (story>=80=0) 上海100, 深圳100, 北京100, 广州76
+- showstart: 300 (story>=80=95) 上海100, 深圳100, 北京100
+- xiaohongshu: 57 (story>=80=28) 上海24, 深圳5, 北京1, 广州6, 杭州15, 重庆1, 南京5
 
-Merged (source_url + fingerprint dedupe): 456 rows
-
-Zip locations (artifacts fuse Errno 5 on large write):
-  /tmp/netncity_share_7platforms_sh_sz.zip
-  /workspace/netncity_share_7platforms_sh_sz.zip
-  Contents: share_ingest_delivery/{per_platform/*.csv, merged_sh_sz.csv, images/{platform}/, COLUMN_GUIDE.txt, STATS.json, DELIVERY_REPORT.txt}
-
-No crawler scripts committed to NetNCity business repo (Scheme B /tmp-only).
+No crawler code / cookies included.
